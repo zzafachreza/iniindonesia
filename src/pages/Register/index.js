@@ -48,7 +48,7 @@ export default function Register({ navigation }) {
         password: '',
         email: '',
         nama_lengkap: '',
-        nik: '',
+        alamat: '',
         telepon: '',
     });
 
@@ -56,7 +56,6 @@ export default function Register({ navigation }) {
         if (
             data.nama_lengkap.length === 0 &&
             data.telepon.length === 0 &&
-            data.nik.length === 0 &&
             data.email.length === 0 &&
             data.password.length === 0
 
@@ -72,10 +71,6 @@ export default function Register({ navigation }) {
         else if (data.telepon.length === 0) {
             showMessage({
                 message: 'Maaf telepon masih kosong !',
-            });
-        } else if (data.nik.length === 0) {
-            showMessage({
-                message: 'Maaf nik masih kosong !',
             });
         } else if (data.password.length === 0) {
             showMessage({
@@ -117,21 +112,7 @@ export default function Register({ navigation }) {
 
 
 
-                <MyGap jarak={10} />
-                <MyInput
 
-                    label="NIK"
-                    iconname="card"
-                    keyboardType="number-pad"
-                    placeholder="Masukan nomor nik"
-                    value={data.nik}
-                    onChangeText={value =>
-                        setData({
-                            ...data,
-                            nik: value,
-                        })
-                    }
-                />
                 <MyGap jarak={10} />
                 <MyInput
                     placeholder="Masukan email"
@@ -171,6 +152,20 @@ export default function Register({ navigation }) {
                         setData({
                             ...data,
                             telepon: value,
+                        })
+                    }
+                />
+
+                <MyGap jarak={10} />
+                <MyInput
+                    placeholder="Masukan nomor telepon"
+                    label="Alamat"
+                    iconname="location"
+                    value={data.alamat}
+                    onChangeText={value =>
+                        setData({
+                            ...data,
+                            alamat: value,
                         })
                     }
                 />

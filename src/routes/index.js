@@ -29,6 +29,7 @@ import {
   AnggotaAdd,
   Kegiatan,
   KegiatanAdd,
+  AccountEdit,
 } from '../pages';
 import { colors } from '../utils';
 import { Icon } from 'react-native-elements';
@@ -117,6 +118,19 @@ export default function Router() {
         options={{
           headerShown: true,
           headerTitle: 'Tambah Kegiatan',
+          headerStyle: {
+            backgroundColor: colors.primary,
+          },
+          headerTintColor: '#fff',
+        }}
+      />
+
+      <Stack.Screen
+        name="AccountEdit"
+        component={AccountEdit}
+        options={{
+          headerShown: true,
+          headerTitle: 'Edit Account',
           headerStyle: {
             backgroundColor: colors.primary,
           },

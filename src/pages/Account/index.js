@@ -106,13 +106,41 @@ export default function ({ navigation, route }) {
 
                 {/* data detail */}
                 <View style={{ padding: 10, flex: 1 }}>
-                    <MyList label="NIK" value={user.nik} />
+
+                    <View style={{
+                        marginVertical: 10,
+                        justifyContent: 'center',
+                        alignItems: 'center'
+                    }}>
+                        <Image style={{
+                            width: 100,
+                            height: 100,
+                            borderRadius: 50,
+                        }} source={{
+                            uri: user.foto_user,
+                        }} />
+                    </View>
+
                     <MyList label="Nama Lengkap" value={user.nama_lengkap} />
                     <MyList label="Email" value={user.email} />
                     <MyList label="Telepon / Whatsapp" value={user.telepon} />
+                    <MyList label="Alamat" value={user.alamat} />
                 </View>
                 <View style={{ padding: 10, flexDirection: 'row', justifyContent: 'space-around' }}>
 
+                    <View style={{
+                        flex: 1,
+                        margin: 5
+                    }}>
+                        <MyButton
+                            onPress={() => navigation.navigate('AccountEdit', user)}
+                            title="Edit Profile"
+                            colorText={colors.white}
+                            iconColor={colors.white}
+                            warna={colors.primary}
+                            Icons="log-out-outline"
+                        />
+                    </View>
                     <View style={{
                         flex: 1,
                         margin: 5

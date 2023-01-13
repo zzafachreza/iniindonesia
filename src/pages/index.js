@@ -25,6 +25,7 @@ import AnggotaDetail from './AnggotaDetail';
 import AnggotaAdd from './AnggotaAdd';
 import Kegiatan from './Kegiatan';
 import KegiatanAdd from './KegiatanAdd';
+import AccountEdit from './AccountEdit';
 
 // NEW
 
@@ -65,6 +66,7 @@ export {
 
 
   Account,
+  AccountEdit,
   Riwayat,
   Anggota,
   AnggotaDetail,

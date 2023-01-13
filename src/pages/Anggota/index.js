@@ -49,7 +49,7 @@ export default function Anggota({ navigation }) {
 
                         flexDirection: 'row'
                     }}>
-                        <Text style={{ flex: 0.5, }}>NIK</Text>
+                        <Text style={{ flex: 0.5, }}>NIK / SIM</Text>
                         <Text style={{ flex: 0.1, }}>:</Text>
                         <Text style={{ flex: 1, }}>{item.nik}</Text>
                     </View>
