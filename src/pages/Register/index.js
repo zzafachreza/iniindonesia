@@ -158,7 +158,7 @@ export default function Register({ navigation }) {
 
                 <MyGap jarak={10} />
                 <MyInput
-                    placeholder="Masukan nomor telepon"
+                    placeholder="Masukan alamat"
                     label="Alamat"
                     iconname="location"
                     value={data.alamat}

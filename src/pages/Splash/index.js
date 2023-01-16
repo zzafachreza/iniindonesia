@@ -51,7 +51,7 @@ export default function Splash({ navigation }) {
     <View
       style={{
         flex: 1,
-        backgroundColor: colors.white,
+        backgroundColor: colors.primary,
       }}>
       <View style={{
         flex: 1,
@@ -60,7 +60,7 @@ export default function Splash({ navigation }) {
       }}>
 
         <Image
-          source={require('../../assets/logo.png')}
+          source={require('../../assets/putih.png')}
           style={
             {
               width: windowWidth - 100,
@@ -69,7 +69,7 @@ export default function Splash({ navigation }) {
             }
           }
         />
-        <ActivityIndicator size="large" color={colors.primary} />
+        <ActivityIndicator size="large" color={colors.black} />
 
 
       </View>

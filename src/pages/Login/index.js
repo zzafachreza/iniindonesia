@@ -82,7 +82,7 @@ export default function ({ navigation }) {
   }, [])
 
   return (
-    <ScrollView style={{ padding: 10, flex: 1, backgroundColor: colors.white }}>
+    <ScrollView style={{ padding: 10, flex: 1, backgroundColor: colors.primary }}>
       <View style={{ justifyContent: 'center', alignItems: 'center', paddingHorizontal: 5, paddingTop: 10 }}>
 
         <View style={{
@@ -93,7 +93,7 @@ export default function ({ navigation }) {
 
 
           <Image
-            source={require('../../assets/logo.png')}
+            source={require('../../assets/putih.png')}
             style={
               {
                 width: 200,
@@ -133,8 +133,10 @@ export default function ({ navigation }) {
           <>
             <MyButton
               onPress={masuk}
+              iconColor={colors.black}
               title="Masuk"
-              warna={colors.primary}
+              colorText={colors.black}
+              warna={colors.white}
               Icons="log-in-outline"
             />
             <TouchableOpacity onPress={() => navigation.navigate('Register')} style={{
@@ -146,13 +148,12 @@ export default function ({ navigation }) {
               marginTop: 10,
               fontFamily: fonts.primary[400],
               textAlign: 'center',
-              color: colors.secondary
+              color: colors.black
             }}>Belum punya akun ? <Text style={{
               fontSize: windowWidth / 28,
               marginTop: 10,
               fontFamily: fonts.primary[600],
               textAlign: 'center',
-              color: colors.secondary
             }}>Daftar disini</Text></Text></TouchableOpacity>
           </>
         }
